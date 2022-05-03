@@ -1,0 +1,44 @@
+﻿*{
+    box-sizing: border-box;
+}
+body{
+	font-family:Tahoma;
+}
+
+/*Login*/
+.screen{
+    display: flex;
+    height: 100vh;
+}
+
+.leftside{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.leftside img{
+    max-width: 600px;
+    height: auto;
+}
+
+
+.righside{
+    width: 400px;
+    background-color: #660099;
+    padding: 50px;
+    border: 30px black;
+    border-radius: 05px;
+    
+}
+
+.log1{
+    padding-top: 50px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dbtn{
+    padding-top: 20px;
+}
