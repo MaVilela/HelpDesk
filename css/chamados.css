@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+	font-family:Tahoma;
+}
+
+li, ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+
+#tblListar{
+	width:100%;
+	border:solid 1px;
+	text-align:left;
+   	border-collapse:collapse; 
+}
+
+#tblListar tbody tr{
+	border:solid blue 1px;
+	height:30px;
+}
+
+#tblListar thead{
+	background:beige;
+}
