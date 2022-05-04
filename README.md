@@ -1,5 +1,5 @@
 # HelpDesk
-A equipe de halp desk precisa de um sistema para gerenciar os chamados internos.
+A equipe de help desk precisa de um sistema para gerenciar os chamados internos.
 O desafio e  criar essa aplicacao utilizando os conhecimentos em HTML, CSS e Javascript.
 
 Entregaveis do Projeto
