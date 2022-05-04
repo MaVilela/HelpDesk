@@ -3,7 +3,7 @@
 }
 
 body{
-	font-family:Tahoma;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -23,33 +23,25 @@ li, ul {
 
 #tblListar{
 	width:100%;
-	border:solid 1px black;
+	border:solid rgba(48, 30, 71, 0.288) 1px;
 	text-align:left;
-	border-collapse:collapse; 
-	border-radius: 20px;
+	border-radius: 30px;
+	
 	
 
 	
 }
 
 #tblListar tbody tr{
-	border:solid blue 1px;
+	border:solid rgba(48, 30, 71, 0.288) 1px;
 	height:30px;
-	border-radius: 05px;
-	
 	
 }
 
 #tblListar thead{
-	background:beige;
-	border-radius: 10px;
-	border: 20px black;
-    
+	background-color: #660099;
+	color: aliceblue;
+	border: 20px #660099;
+	border-radius: 5;
 	
-	
-	
-}
-.lista{
-	border: 30px black;
-    border-radius: 05px
 }
