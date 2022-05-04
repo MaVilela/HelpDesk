@@ -1,9 +1,11 @@
 *{
     box-sizing: border-box;
+
 }
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ece4f063;
 }
 
 
@@ -26,6 +28,7 @@ li, ul {
 	border:solid rgba(48, 30, 71, 0.288) 1px;
 	text-align:left;
 	border-radius: 30px;
+	background-color: #ffffff;
 	
 	
 
@@ -44,4 +47,22 @@ li, ul {
 	border: 20px #660099;
 	border-radius: 5;
 	
+}
+
+#btnSalvar {
+	color: #dddddd;
+	padding: 5px 10px;
+	background-color: #660099;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+	transition: 300ms;
+}
+
+#btnSalvar:hover {
+	background-color: #6600998a;
+}
+
+#leg_pes {
+	color: #660099;
 }

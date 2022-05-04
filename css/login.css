@@ -27,7 +27,7 @@ body{
 
 .righside{
     width: 400px;
-    background-color: #660099;
+    background: linear-gradient(0deg, #f26296 0%, #660099 100%);
     padding: 50px;
     border: 30px black;
     border-radius: 05px;
@@ -36,9 +36,14 @@ body{
 
 .log1{
     padding-top: 50px;
-    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+    color: #dddddd;
     font-family: Arial, Helvetica, sans-serif;
 }
 .dbtn{
     padding-top: 20px;
+}
+
+.form-floating {
+    padding-bottom: 15px;
 }

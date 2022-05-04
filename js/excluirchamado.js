@@ -9,7 +9,7 @@ $(function(){
 	
 	var indice_selecionado = -1;
 	
-	var tbClientes = localStorage.getItem("tbClientes");// Recupera os dados armazenados
+	var tbClientes = localStorage.getItem("tbClientes"); // Recupera os dados armazenados
 
 	tbClientes = JSON.parse(tbClientes); // Converte string para objeto
 
@@ -25,7 +25,7 @@ $(function(){
 			alert("Código já cadastrado.");
 			return;
 		}
-	// caso contrário insere
+	// Caso contrário insere
 		var cliente = JSON.stringify({
             Codigo    : $("#txtCodigo").val(),
 			Nome      : $("#txtNome").val(),
@@ -34,7 +34,8 @@ $(function(){
             Hora      : $("#txtHora").val(),
             Categoria : $("#txtCategoria").val(),
             Prioridade: $("#txtPrioridade").val(),
-            Descricao : $("#txtDescricao").val()
+            Descricao : $("#txtDescricao").val(),
+			Status    : $("#txtStatus").val()
             
 		});
 
@@ -57,7 +58,8 @@ $(function(){
             Hora      : $("#txtHora").val(),
             Categoria : $("#txtcategoria").val(),
             Prioridade: $("#txtPrioridade").val(),
-            Descricao : $("#txtDescricao").val()
+            Descricao : $("#txtDescricao").val(),
+			Status    : $("#txtStatus").val()
 			});
 		localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
 		alert("Informações editadas.")
@@ -78,7 +80,8 @@ $(function(){
             "	<th>Hora</th>"+
             "	<th>Categoria</th>"+
             "	<th>Prioridade</th>"+
-            "	<th>Descricao</th>"+
+            "	<th>Descrição</th>"+
+			"	<th>Status</th>"+
 			"	</tr>"+
 			"</thead>"+
 			"<tbody>"+
@@ -98,12 +101,13 @@ $(function(){
                                          "	<td>"+cli.Categoria+"</td>" + 
                                          "	<td>"+cli.Prioridade+"</td>" + 
                                          "	<td>"+cli.Descricao+"</td>" + 
+										 "	<td>"+cli.Status+"</td>" + 
 		  								 "</tr>");
 		 }
 		 
 	}
 
-		// Função para excluir registros
+	// Função para excluir registros
 	function Excluir(){
 		tbClientes.splice(indice_selecionado, 1);
 		localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
@@ -120,7 +124,7 @@ $(function(){
         }
         return cli;
 	}
-	// chamda da função listar clientes
+	// Chamda da função listar clientes
 	Listar();
 
 	// Ação com base nos eventos de formulário
@@ -143,6 +147,7 @@ $(function(){
         $("#txtCategoria").val(cli.Categoria);
         $("#txtPrioridade").val(cli.propriedade);
         $("#txtDescricao").val(cli.Descricao);
+		$("#txtStatus").val(cli.Status);
 		$("#txtCodigo").attr("readonly","readonly");
 		$("#txtNome").focus();
 	});
@@ -152,4 +157,9 @@ $(function(){
 		Excluir();
 		Listar();
 	});
+	// Ação com base nos eventos do número do Código
+	$("#txtcodigo").val (ultconv+1);
+	var ultimo=JSON.parse (tbClientes.slice(-1));
+	var ultimo=parseInt (ultimo.codigo);
+	
 });
