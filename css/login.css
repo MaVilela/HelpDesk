@@ -16,17 +16,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .leftside img{
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
 }
+
 
 .righside{
     width: 400px;
     background-color: #660099;
     padding: 50px;
+    border: 30px black;
+    border-radius: 05px;
+    
 }
 
 .log1{

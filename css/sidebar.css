@@ -48,6 +48,7 @@ a:focus {
     display: flex;
     width: 100%;
     align-items: stretch;
+    
 }
 
 #sidebar {
@@ -56,6 +57,8 @@ a:focus {
     background: #660099;
     color: #fff;
     transition: all 0.3s;
+    border: 30px black;
+    border-radius: 05px;
 }
 
 #sidebar.active {
@@ -69,7 +72,8 @@ a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #2e0144;
+    
+   
 }
 
 #sidebar ul p {
@@ -81,6 +85,7 @@ a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    
 }
 
 #sidebar ul li a:hover {

@@ -89,8 +89,8 @@ $(function(){
 		 for(var i in tbClientes){
 			var cli = JSON.parse(tbClientes[i]);
 		  	$("#tblListar tbody").append("<tr>"+
-			  							"	<td></td>" + 
-									 	 "	<td>"+cli.Codigo+"</td>" + 
+                                         "  <td><img src='img/delete.png' alt='"+i+"' class='btnExcluir'/></td>" + 
+              						 	 "	<td>"+cli.Codigo+"</td>" + 
 										 "	<td>"+cli.Nome+"</td>" + 
 										 "	<td>"+cli.Email+"</td>" + 
                                          "	<td>"+cli.Data+"</td>" + 

@@ -13,37 +13,37 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/chamados.css">
 
     <!-- Font Awesome JS -->
-    <script defer src="js/cadchamado.js"></script>
+    <script defer src="js/excluirchamado.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="sb1">
-        <!-- Menu lateral  -->
+        <!-- Sidebar  -->
         <nav id="sidebar">
-            <div class=" ">
-            <ul class="list-unstyled components ">
+            <ul class="list-unstyled components">
                 <h2>Help Desk</h2>
-                <h2 class="log1">Login</h2>
-                <li class=" form-floating mb-3" >
-                    <input id="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email</label>
+                <li >
+                    <a href="chamado.html">Chamados</a>
                 </li>
-                <li  class=" form-floating mb-3"> 
-                    <input id="senha" type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Senha</label>
+                <li>
+                    <a href="novochamado.html">Novo Chamado</a>
                 </li>
-                <li class=" form-floating mb-3">
-                    <button onclick="logar()" class="btn btn-light">Login</button>
+                <li >
+                    <a href="editarchamado.html">Editar Chamado</a>
+                <li>
+                    <li class="selecionado">
+                        <a href="excluirchamado.html">Excluir Chamado</a>
+                <li>
+                    <a href="index.html">Sair</a>
                 </li>
             </ul>
-        </div>
         </nav>
-        <!-- Botao responsivo -->
+        <!-- Page Content  -->
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -52,14 +52,20 @@
                         <i class="fas fa-align-left"></i>
                     </button>
             </nav>
-        <!--Conteudo da Pagina-->
-            <div>
-              
+     
+            <div  >
+                <table id="tblListar">
+                
+                    </table>
+                
+                
             </div>
         </div>
 
         
     </div>
+
+
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

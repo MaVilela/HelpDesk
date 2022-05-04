@@ -1,28 +1,55 @@
 *{
     box-sizing: border-box;
 }
+
 body{
 	font-family:Tahoma;
 }
 
+
 li, ul {
 	text-decoration: none;
 	list-style: none;
+	border-radius: 20px;
+	
+	
+}
+
+.sb1{
+	border: 30px black;
+    border-radius: 20px;
 }
 
 
 #tblListar{
 	width:100%;
-	border:solid 1px;
+	border:solid 1px black;
 	text-align:left;
-   	border-collapse:collapse; 
+	border-collapse:collapse; 
+	border-radius: 20px;
+	
+
+	
 }
 
 #tblListar tbody tr{
 	border:solid blue 1px;
 	height:30px;
+	border-radius: 05px;
+	
+	
 }
 
 #tblListar thead{
 	background:beige;
+	border-radius: 10px;
+	border: 20px black;
+    
+	
+	
+	
+}
+.lista{
+	border: 30px black;
+    border-radius: 05px
 }
