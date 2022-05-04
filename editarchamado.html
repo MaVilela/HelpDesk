@@ -54,9 +54,91 @@
             </nav>
      
             <div  >
+
+                <form id="frmCadastro">
+                    <fieldset>
+                        <legend class="pl-1 pr-1" id="leg_pes">Editar Chamado</legend>
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="form-group text-left">
+                                    <label class="form-label" for="txtCodigo">Código:</label>
+                                    <input class="form-control"type="number" id="txtCodigo"/>
+                            </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group text-left">
+                                    <label class="form-label"for="txtNome">Nome:</label>
+                                    <input class="form-control" type="text" id="txtNome"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group text-left">
+                                    <label class="form-label" for="txtEmail">Email</label>
+                                    <input class="form-control"  type="email" id="txtEmail"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                           
+                            <div class="col-lg-2">
+                                <div class="form-group text-left">
+                                    <label class="form-label" for="txtData">Data do Chamado</label>
+                                    <input class="form-control" type="date" id="txtData"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group text-left">
+                                    <label class="form-label" for="txtHora">Hora do Chamado:</label>
+                                    <input class="form-control" type="time" id="txtHora"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class=" text-left" style="padding-top: 30px;">
+                                    <li>
+                                    <select id="txtCategoria" class="form-select" aria-label="Default select example" style="padding-top: 10px;" >
+                                        <option for="txtCategoria" selected>Categoria do Problema</option>
+                                        <option for="txtCategoria" value="Hardware">Hardware</option>
+                                        <option for="txtCategoria" value="Software">Software</option>
+                                        <option for="txtCategoria" value="telefonia">telefonia</option>
+                                        <option for="txtCategoria" value="Rede">Rede</option>
+                                        <option for="txtCategoria" value="Internet">Internet</option>
+                                    </select>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group text-left" style="padding-top: 30px;">
+                                    <li>
+                                        <select id="txtPrioridade"  class="form-select" aria-label="Default select example">
+                                            <option for="txtPrioridade" selected>Prioridade</option>
+                                            <option for="txtPrioridade" value="Alta">Alta</option>
+                                            <option for="txtPrioridade" value="Media">Media</option>
+                                            <option for="txtPrioridade" value="Baixa">Baixa</option>
+                                        </select>
+                                    </li>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group text-left">
+                                    <li>
+                                        <label for="txtDescricao" class="form-label">Descricao do Problema</label>
+                                        <textarea class="form-control" id="txtDescricao" rows="3"></textarea>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <li style="padding-top: 31px; padding-bottom: 30px;">
+                            <input type="submit" value="Salvar" id="btnSalvar"/>
+                        </li>
+                    </fieldset>
+                </form>
+
                 <table id="tblListar">
-                
-                    </table>
+                </table>
                 
                 
             </div>
