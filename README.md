@@ -15,4 +15,4 @@ Entregaveis do Projeto
 -   Validar e guardar as informacoes do formulario de edicao de chamados
 -   Listar os chamados dinamicamente de acordo com os dados do arquivo JSON
 -   Exibir mensgem de confirmacao antes de excluir o chamado do JSON
-- Projeto Consolidado
+- Projeto Consolidado.
