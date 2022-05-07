@@ -63,19 +63,19 @@
                             <div class="col-lg-2">
                                 <div class="form-group text-left">
                                     <label class="form-label" for="txtCodigo">Código:</label>
-                                    <input class="form-control"type="number" id="txtCodigo"/>
+                                    <input class="form-control"type="number" id="txtCodigo" disabled/>
                             </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group text-left">
                                     <label class="form-label"for="txtNome">Nome:</label>
-                                    <input class="form-control" type="text" id="txtNome"/>
+                                    <input class="form-control" type="text" id="txtNome" required/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group text-left">
                                     <label class="form-label" for="txtEmail">Email:</label>
-                                    <input class="form-control"  type="email" id="txtEmail"/>
+                                    <input class="form-control"  type="email" id="txtEmail" required/>
                                 </div>
                             </div>
                         </div>
@@ -85,19 +85,19 @@
                             <div class="col-lg-2">
                                 <div class="form-group text-left">
                                     <label class="form-label" for="txtData">Data do Chamado:</label>
-                                    <input class="form-control" type="date" id="txtData"/>
+                                    <input class="form-control" type="date" id="txtData" disabled/>
                                 </div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="form-group text-left">
                                     <label class="form-label" for="txtHora">Hora do Chamado:</label>
-                                    <input class="form-control" type="time" id="txtHora"/>
+                                    <input class="form-control" type="time" id="txtHora" disabled/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class=" text-left" style="padding-top: 30px;">
                                     <li>
-                                    <select id="txtCategoria" class="form-select" aria-label="Default select example" style="padding-top: 10px;" >
+                                    <select id="txtCategoria" class="form-select" aria-label="Default select example" style="padding-top: 10px;" required>
                                         <option for="txtCategoria" selected>Categoria do Problema:</option>
                                         <option for="txtCategoria" value="Hardware">Hardware</option>
                                         <option for="txtCategoria" value="Software">Software</option>
@@ -111,7 +111,7 @@
                             <div class="col-lg-4">
                                 <div class="form-group text-left" style="padding-top: 30px;">
                                     <li>
-                                        <select id="txtPrioridade"  class="form-select" aria-label="Default select example" style="padding-top: 10px;">
+                                        <select id="txtPrioridade"  class="form-select" aria-label="Default select example" style="padding-top: 10px;" required>
                                             <option for="txtPrioridade" selected>Prioridade:</option>
                                             <option for="txtPrioridade" value="Alta">Alta</option>
                                             <option for="txtPrioridade" value="Media">Media</option>
@@ -128,14 +128,14 @@
                                 <div class="form-group text-left">
                                     <li>
                                         <label for="txtDescricao" class="form-label">Descrição do Problema:</label>
-                                        <textarea class="form-control" id="txtDescricao" rows="3"></textarea>
+                                        <textarea class="form-control" id="txtDescricao" rows="3" required></textarea>
                                     </li>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group text-left" style="padding-top: 30px;">
                                     <li>
-                                        <select id="txtStatus"  class="form-select" aria-label="Default select example" style="padding-top: 10px;">
+                                        <select id="txtStatus"  class="form-select" aria-label="Default select example" style="padding-top: 10px;" disabled>
                                             <option for="txtStatus" selected>Status:</option>
                                             <option for="txtStatus" value="Alta">Aguardando Suporte</option>
                                             <option for="txtStatus" value="Media">Em Análise</option>
