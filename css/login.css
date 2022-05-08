@@ -2,48 +2,57 @@
     box-sizing: border-box;
 }
 body{
+    background-image: url(../img/ban3.jpg);
+    background-repeat: no-repeat;
+  	background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    color: #660099;
+}
+
+#pagelogin{
+  
+    max-width: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Login*/
-.screen{
-    display: flex;
-    height: 100vh;
+.boxlogin {
+    display: flexbox;
+    background-color: #ffffff;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.308);
 }
 
-.leftside{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+#formlogin {
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.308);
 }
 
-.leftside img{
-    max-width: 600px;
-    height: auto;
+.btnlogin{
+    text-align: center;
+    margin-top: 30px;
+    background-color: #660099;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.308);
+    border-radius: 20px;
+    width: 100px;
 }
-
-
-.righside{
-    width: 400px;
-    background: linear-gradient(0deg, #f26296 0%, #660099 100%);
-    padding: 50px;
-    border: 30px black;
-    border-radius: 05px;
-    
-}
-
-.log1{
-    padding-top: 50px;
-    padding-bottom: 20px;
-    color: #dddddd;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.dbtn{
-    padding-top: 20px;
-}
-
-.form-floating {
-    padding-bottom: 15px;
+@media (max-width: 768px) {
+  
 }
