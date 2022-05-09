@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Área do Usuário</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/chamados.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="js/editchamado.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sb1">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <ul class="list-unstyled components">
+                <h2>Help Desk</h2>
+                <li>
+                    <a href="novochamado.html">Novo Chamado</a>
+                </li>
+                <li class="selecionado">
+                    <a href="editarchamado.html">Editar Chamado</a>
+                </li>
+                <li>
+                    <a href="excluirchamado.html">Excluir Chamado</a>
+                <li>
+                    <li>
+                        <a href="chamado.html">Listar Chamados</a>
+                <li>
+                    <a href="index.html">Sair</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-meu">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+            </nav>
+     
+            <div >
+
+                <form id="frmCadastro">
+                    <fieldset>
+                        <legend class="pl-1 pr-1" id="leg_pes" style="padding-bottom: 20px;"><b>Editar Chamado</b></legend>
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="form-group text-left">
+                                    <label class="form-label" for="txtCodigo">Código:</label>
+                                    <input class="form-control"type="number" id="txtCodigo" disabled/>
+                            </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group text-left">
+                                    <label class="form-label"for="txtNome">Nome:</label>
+                                    <input class="form-control" type="text" id="txtNome"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group text-left">
+                                    <label class="form-label" for="txtEmail">Email:</label>
+                                    <input class="form-control"  type="email" id="txtEmail"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="form-group text-left">
+                                    <label class="form-label" for="txtData">Data do Chamado:</label>
+                                    <input class="form-control" type="date" id="txtData"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group text-left">
+                                    <label class="form-label" for="txtHora">Hora do Chamado:</label>
+                                    <input class="form-control" type="time" id="txtHora"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class=" text-left" style="padding-top: 30px;">
+                                    <li>
+                                    <select id="txtCategoria" class="form-select" aria-label="Default select example" style="padding-top: 10px;" >
+                                        <option for="txtCategoria" selected>Categoria do Problema:</option>
+                                        <option for="txtCategoria" value="Hardware">Hardware</option>
+                                        <option for="txtCategoria" value="Software">Software</option>
+                                        <option for="txtCategoria" value="telefonia">Telefonia</option>
+                                        <option for="txtCategoria" value="Rede">Rede</option>
+                                        <option for="txtCategoria" value="Internet">Internet</option>
+                                    </select>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group text-left" style="padding-top: 30px;">
+                                    <li>
+                                        <select id="txtPrioridade"  class="form-select" aria-label="Default select example" style="padding-top: 10px;">
+                                            <option for="txtPrioridade" selected>Prioridade:</option>
+                                            <option for="txtPrioridade" value="Alta">Alta</option>
+                                            <option for="txtPrioridade" value="Media">Media</option>
+                                            <option for="txtPrioridade" value="Baixa">Baixa</option>
+                                        </select>
+                                    </li>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="form-group text-left">
+                                    <li>
+                                        <label for="txtDescricao" class="form-label">Descrição do Problema:</label>
+                                        <textarea class="form-control" id="txtDescricao" rows="3"></textarea>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group text-left" style="padding-top: 30px;">
+                                    <li>
+                                        <select id="txtStatus"  class="form-select" aria-label="Default select example" style="padding-top: 10px;">
+                                            <option for="txtStatus" selected>Status:</option>
+                                            <option for="txtStatus" value="Alta">Aguardando Suporte</option>
+                                            <option for="txtStatus" value="Media">Em Análise</option>
+                                            <option for="txtStatus" value="Baixa">Em Atendimento</option>
+                                        </select>
+                                    </li>
+                                </div>
+                            </div>
+
+                        </div>
+                        <li style="padding-top: 31px; padding-bottom: 30px;">
+                            <input type="submit" value="Salvar" id="btnSalvar"/>
+                        </li>
+                    </fieldset>
+                </form>
+
+                <table id="tblListar">
+
+                </table>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Data de início: 11/04/2022 | Última versão: 14/05/2022</p>
+    </footer>
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
