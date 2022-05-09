@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;');
+
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 h2{
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ddd;
+    color: #fff;
 }
+
 a,
 a:hover,
 a:focus {
@@ -18,11 +21,10 @@ a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px #66009921;
 }
 
 .navbar-btn {
@@ -57,8 +59,8 @@ a:focus {
     background: linear-gradient(0deg, #f26296 0%, #660099 100%);
     color: #fff;
     transition: all 0.3s;
-    border: 30px black;
-    border-radius: 05px;
+    border: 30px;
+    border-radius: 5px;
 }
 
 #sidebar.active {
@@ -67,7 +69,7 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #fefeff;
+    
 }
 
 #sidebar ul.components {
@@ -85,23 +87,25 @@ a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    border-radius: 15px;
     
 }
 
 #sidebar ul li a:hover {
-    color: #660099;
-    background: #fff;
+    color: #fff;
+    background: #b887be;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #f7f8ff;
+
 }
 
 .selecionado{
-    background-color: #ddd;
-    color: #2e0144;
+    background-color: #fff;
+    color: #660099;
+    border-radius: 15px;
 }
 
 /* CONTENT */

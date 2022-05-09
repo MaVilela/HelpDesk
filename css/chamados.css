@@ -3,8 +3,11 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;');
+
+
 body{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background-color: #ece4f063;
 }
 
@@ -18,16 +21,15 @@ li, ul {
 }
 
 .sb1{
-	border: 30px black;
+	border: 30px;
     border-radius: 20px;
 }
 
 
 #tblListar{
 	width:100%;
-	border:solid rgba(48, 30, 71, 0.288) 1px;
+	border:solid #660099 1px;
 	text-align:left;
-	border-radius: 30px;
 	background-color: #ffffff;
 	
 	
@@ -36,21 +38,21 @@ li, ul {
 }
 
 #tblListar tbody tr{
-	border:solid rgba(48, 30, 71, 0.288) 1px;
+	border:solid #d9c4e2 1px;
 	height:30px;
 	
 }
 
 #tblListar thead{
 	background-color: #660099;
-	color: aliceblue;
+	color: #fff;
 	border: 20px #660099;
-	border-radius: 5;
+	border-radius: 5px;
 	
 }
 
 #btnSalvar {
-	color: #dddddd;
+	color: #fff;
 	padding: 5px 10px;
 	background-color: #660099;
 	border-radius: 5px;
@@ -65,4 +67,20 @@ li, ul {
 
 #leg_pes {
 	color: #660099;
+}
+
+.footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+	position: absolute;
+    justify-content: center;
+	background-color: #b887be27;
+	color: #660099;
+	max-height: 8vh;
+	border-radius: 5px;
+	font-size: 14px;
+	padding-top: 2.5vh;
+
 }
