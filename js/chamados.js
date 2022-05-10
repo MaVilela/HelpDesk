@@ -2,6 +2,7 @@
 ao fim da seção, logo, podemos fechar e abrir o browser várias vezes e as informações
 gravadas permanecerão lá  */
 // Inicio da Função JSON
+
 function logar(){
     var email = document.getElementById("email");
     var senha = document.getElementById("senha");
@@ -58,6 +59,7 @@ $(function(){
             
 		});
 
+		console.log(cliente)
 		tbClientes.push(cliente);
 
 		localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
@@ -128,11 +130,18 @@ $(function(){
 		 
 	}
 
+
+
 	// Função para excluir registros
 	function Excluir(){
+		let decisao = confirm("Deseja mesmo exluir o chamado?");
+		if (decisao==true) {
 		tbClientes.splice(indice_selecionado, 1);
 		localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
 		alert("Registro excluído.");
+		}else{
+			alert("O chamado não foi excluido");
+		}
 	}
 
 	// Função par pesquisar cliente
@@ -179,16 +188,6 @@ $(function(){
 		Listar();
 	});
 
-	// Código automatico //
-	var ultimo = JSON.parse(tbClientes.slice(-1));
-	var ultconv = parseInt(ultimo.Codigo);
-	
-			$("#txtCodigo").val(ultconv+1);
-
-	// Ação com base nos eventos do número do Código
-	$("#txtcodigo").val (ultconv+1);
-	var ultimo=JSON.parse (tbClientes.slice(-1));
-	var ultimo=parseInt (ultimo.codigo);
 
 
 	// status
@@ -239,6 +238,15 @@ $("#txtNome").change(function () {
 
 	//alert(hora_geral);
 
+	// Código automatico //
+	try {
+		var ultimo = JSON.parse(tbClientes.slice(-1));
+		var ultconv = parseInt(ultimo.Codigo);
+		
+			 $("#txtCodigo").val(ultconv+1);	
+	} catch (error) {
+		console.log(error);
+	}
 	
 	
 	
