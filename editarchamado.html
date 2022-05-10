@@ -84,13 +84,13 @@
                             <div class="col-lg-2">
                                 <div class="form-group text-left">
                                     <label class="form-label" for="txtData">Data do Chamado:</label>
-                                    <input class="form-control" type="date" id="txtData"/>
+                                    <input class="form-control" type="date" id="txtData" disabled/>
                                 </div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="form-group text-left">
                                     <label class="form-label" for="txtHora">Hora do Chamado:</label>
-                                    <input class="form-control" type="time" id="txtHora"/>
+                                    <input class="form-control" type="time" id="txtHora" disabled/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
@@ -136,9 +136,10 @@
                                     <li>
                                         <select id="txtStatus"  class="form-select" aria-label="Default select example" style="padding-top: 10px;">
                                             <option for="txtStatus" selected>Status:</option>
-                                            <option for="txtStatus" value="Alta">Aguardando Suporte</option>
-                                            <option for="txtStatus" value="Media">Em Análise</option>
-                                            <option for="txtStatus" value="Baixa">Em Atendimento</option>
+                                            <option for="txtStatus" value="Chamado Aberto">Chamado Aberto</option>
+                                            <option for="txtStatus" value="Aguardando Suporte">Aguardando Suporte</option>
+                                            <option for="txtStatus" value="Em análise">Em Análise</option>
+                                            <option for="txtStatus" value="Em Atendimento">Em Atendimento</option>
                                         </select>
                                     </li>
                                 </div>
@@ -160,7 +161,7 @@
     </div>
 
     <footer class="footer">
-        <p>Data de início: 11/04/2022 | Última versão: 14/05/2022</p>
+        <p>Data de início: 11/04/2022 | Última versão: 13/05/2022</p>
     </footer>
 
 
