@@ -42,8 +42,9 @@
                     <a href="index.html">Sair</a>
                 </li>
             </ul>
+            <p class="versao">V.10/05/2022</p>
         </nav>
-        <!-- Page Content  -->
+        <!-- Menu Lateral -->
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -52,9 +53,8 @@
                         <i class="fas fa-align-left"></i>
                     </button>
             </nav>
-     
-            <div >
-
+            <!-- Formulario -->
+            <div class="container">
                 <form id="frmCadastro">
                     <fieldset>
                         <legend class="pl-1 pr-1" id="leg_pes" style="padding-bottom: 20px;"><b>Editar Chamado</b></legend>
@@ -68,23 +68,22 @@
                             <div class="col-lg-4">
                                 <div class="form-group text-left">
                                     <label class="form-label"for="txtNome">Nome:</label>
-                                    <input class="form-control" type="text" id="txtNome"/>
+                                    <input class="form-control" type="text" id="txtNome" required/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group text-left">
                                     <label class="form-label" for="txtEmail">Email:</label>
-                                    <input class="form-control"  type="email" id="txtEmail"/>
+                                    <input class="form-control"  type="email" id="txtEmail" required/>
                                 </div>
                             </div>
                         </div>
                         <br>
-
                         <div class="row">
                             <div class="col-lg-2">
                                 <div class="form-group text-left">
                                     <label class="form-label" for="txtData">Data do Chamado:</label>
-                                    <input class="form-control" type="date" id="txtData" disabled/>
+                                    <input class="form-control" type="date" id="txtData" disabled />
                                 </div>
                             </div>
                             <div class="col-lg-2">
@@ -96,8 +95,8 @@
                             <div class="col-lg-4">
                                 <div class=" text-left" style="padding-top: 30px;">
                                     <li>
-                                    <select id="txtCategoria" class="form-select" aria-label="Default select example" style="padding-top: 10px;" >
-                                        <option for="txtCategoria" selected>Categoria do Problema:</option>
+                                    <select id="txtCategoria" class="form-select" aria-label="Default select example" style="padding-top: 10px;" required>
+                                        <option for="txtCategoria" selected disabled value="">Categoria do Problema:</option>
                                         <option for="txtCategoria" value="Hardware">Hardware</option>
                                         <option for="txtCategoria" value="Software">Software</option>
                                         <option for="txtCategoria" value="telefonia">Telefonia</option>
@@ -110,8 +109,8 @@
                             <div class="col-lg-4">
                                 <div class="form-group text-left" style="padding-top: 30px;">
                                     <li>
-                                        <select id="txtPrioridade"  class="form-select" aria-label="Default select example" style="padding-top: 10px;">
-                                            <option for="txtPrioridade" selected>Prioridade:</option>
+                                        <select id="txtPrioridade"  class="form-select" aria-label="Default select example" style="padding-top: 10px;" required>
+                                            <option for="txtPrioridade" selected disabled value="">Prioridade:</option>
                                             <option for="txtPrioridade" value="Alta">Alta</option>
                                             <option for="txtPrioridade" value="Media">Media</option>
                                             <option for="txtPrioridade" value="Baixa">Baixa</option>
@@ -127,16 +126,16 @@
                                 <div class="form-group text-left">
                                     <li>
                                         <label for="txtDescricao" class="form-label">Descrição do Problema:</label>
-                                        <textarea class="form-control" id="txtDescricao" rows="3"></textarea>
+                                        <textarea class="form-control" id="txtDescricao" rows="3" required></textarea>
                                     </li>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group text-left" style="padding-top: 30px;">
                                     <li>
-                                        <select id="txtStatus"  class="form-select" aria-label="Default select example" style="padding-top: 10px;">
-                                            <option for="txtStatus" selected>Status:</option>
-                                            <option for="txtStatus" value="Chamado Aberto">Chamado Aberto</option>
+                                        <select id="txtStatus"  class="form-select" aria-label="Default select example" style="padding-top: 10px;" disabled>
+                                            <option for="txtStatus" >Status:</option>
+                                            <option for="txtStatus" selected value="Chamado Aberto">Chamado Aberto</option>
                                             <option for="txtStatus" value="Aguardando Suporte">Aguardando Suporte</option>
                                             <option for="txtStatus" value="Em análise">Em Análise</option>
                                             <option for="txtStatus" value="Em Atendimento">Em Atendimento</option>
@@ -152,18 +151,15 @@
                     </fieldset>
                 </form>
 
-                <table id="tblListar">
+                <!--Lista/Tabela-->
+                <div style="overflow-x:auto">
+                    <table id="tblListar">
 
-                </table>
-                
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-
-    <footer class="footer">
-        <p>Data de início: 11/04/2022 | Última versão: 13/05/2022</p>
-    </footer>
-
 
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->

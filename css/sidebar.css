@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;');
+*{
+    box-sizing: border-box;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -68,14 +71,11 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    
+    padding: 20px; 
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    
-   
 }
 
 #sidebar ul p {
@@ -88,7 +88,6 @@ a:focus {
     font-size: 1.1em;
     display: block;
     border-radius: 15px;
-    
 }
 
 #sidebar ul li a:hover {
