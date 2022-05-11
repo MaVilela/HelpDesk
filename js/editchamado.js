@@ -56,7 +56,7 @@ $(function(){
 			Email     : $("#txtEmail").val(),
             Data      : $("#txtData").val(),
             Hora      : $("#txtHora").val(),
-            Categoria : $("#txtcategoria").val(),
+            Categoria : $("#txtCategoria").val(),
             Prioridade: $("#txtPrioridade").val(),
             Descricao : $("#txtDescricao").val(),
 			Status    : $("#txtStatus").val()
