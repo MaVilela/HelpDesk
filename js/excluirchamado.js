@@ -109,13 +109,13 @@ $(function(){
 
 	// Função para excluir registros
 	function Excluir(){
-		let decisao = confirm("Deseja mesmo exluir o chamado?");
+		let decisao = confirm("Deseja mesmo excluir o chamado?");
 		if (decisao==true) {
 		tbClientes.splice(indice_selecionado, 1);
 		localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
 		alert("Registro excluído.");
 		}else{
-			alert("O chamado não foi excluido");
+			alert("O chamado não foi excluído");
 		}
 	}
 
