@@ -9,7 +9,6 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color: #ece4f063;
-	
 }
 
 
@@ -17,32 +16,41 @@ li, ul {
 	text-decoration: none;
 	list-style: none;
 	border-radius: 20px;
+	
+	
 }
 
-/*tabela*/
-th {
-	background-color: #660099;
-	color: white;
-	padding: 8px;
-}
-td {
-	text-align: left;
-	padding: 8px;
+.sb1{
+	border: 30px;
+    border-radius: 20px;
 }
 
-tr:hover {background-color: #66009949;}
 
 #tblListar{
 	width:100%;
-	border:solid #66009952 1px;
+	border:solid #660099 1px;
 	text-align:left;
 	background-color: #ffffff;
-	border-collapse: collapse;
-  width: 100%;
+	
+	
+
+	
 }
 
+#tblListar tbody tr{
+	border:solid #d9c4e2 1px;
+	height:30px;
+	
+}
 
-/*Botao*/
+#tblListar thead{
+	background-color: #660099;
+	color: #fff;
+	border: 20px #660099;
+	border-radius: 5px;
+	
+}
+
 #btnSalvar {
 	color: #fff;
 	padding: 5px 10px;
@@ -68,3 +76,5 @@ tr:hover {background-color: #66009949;}
 	position: fixed;
 	padding-left: 10px;
 }	
+
+
