@@ -150,7 +150,7 @@ $(function(){
         $("#txtData").val(cli.Data);
         $("#txtHora").val(cli.Hora);
         $("#txtCategoria").val(cli.Categoria);
-        $("#txtPrioridade").val(cli.propriedade);
+        $("#txtPrioridade").val(cli.Prioridade);
         $("#txtDescricao").val(cli.Descricao);
 		$("#txtStatus").val(cli.Status);
 		$("#txtCodigo").attr("readonly","readonly");
