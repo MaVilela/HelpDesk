@@ -10,12 +10,12 @@ function logar(){
     if(email.value == "admin@email.com" && senha.value == "1234"){
         var autoriza = 1;
         localStorage.setItem("acesso", true);
-        window.location.href = "editarchamado.html";
+        window.location.href = "novochamado.html";
 
     }else if(email.value == "user@email.com" && senha.value == "1234"){
         var autoriza = 2;
         localStorage.setItem("acesso", true);
-        window.location.href = "editarchamado.html";
+        window.location.href = "novochamado.html";
     }else{
         alert("Usuario ou Senha Invalidos!");
     }
@@ -54,9 +54,7 @@ $(function(){
             Categoria : $("#txtCategoria").val(),
             Prioridade: $("#txtPrioridade").val(),
             Descricao : $("#txtDescricao").val(),
-			Status	  : $("#txtStatus").val()
-		
-            
+			Status	  : ("Chamado Aberto")       
 		});
 
 		console.log(cliente)
@@ -77,7 +75,7 @@ $(function(){
 			Email     : $("#txtEmail").val(),
             Data      : $("#txtData").val(),
             Hora      : $("#txtHora").val(),
-            Categoria : $("#txtcategoria").val(),
+            Categoria : $("#txtCategoria").val(),
             Prioridade: $("#txtPrioridade").val(),
             Descricao : $("#txtDescricao").val(),
 			Status    : $("#txtStatus").val()
@@ -119,7 +117,7 @@ $(function(){
 									 	 "	<td>"+cli.Codigo+"</td>" + 
 										 "	<td>"+cli.Nome+"</td>" + 
 										 "	<td>"+cli.Email+"</td>" + 
-                                         "	<td>"+cli.Data+"</td>" + 
+                                         "	<td>"+dtfinal+"</td>" + 
                                          "	<td>"+cli.Hora+"</td>" + 
                                          "	<td>"+cli.Categoria+"</td>" + 
                                          "	<td>"+cli.Prioridade+"</td>" + 
@@ -175,7 +173,7 @@ $(function(){
         $("#txtData").val(cli.Data);
         $("#txtHora").val(cli.Hora);
         $("#txtCategoria").val(cli.Categoria);
-        $("#txtPrioridade").val(cli.Prioriedade);
+        $("#txtPrioridade").val(cli.Prioridade);
         $("#txtDescricao").val(cli.Descricao);
 		$("#txtStatus").val(cli.Status);
 		$("#txtCodigo").attr("readonly","readonly");

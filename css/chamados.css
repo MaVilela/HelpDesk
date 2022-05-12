@@ -9,7 +9,6 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color: #ece4f063;
-	
 }
 
 
@@ -17,6 +16,8 @@ li, ul {
 	text-decoration: none;
 	list-style: none;
 	border-radius: 20px;
+	
+	
 }
 
 /*tabela*/
@@ -41,8 +42,37 @@ tr:hover {background-color: #66009949;}
   width: 100%;
 }
 
+.sb1{
+	border: 30px;
+    border-radius: 20px;
+}
 
-/*Botao*/
+
+#tblListar{
+	width:100%;
+	border:solid #660099 1px;
+	text-align:left;
+	background-color: #ffffff;
+	
+	
+
+	
+}
+
+#tblListar tbody tr{
+	border:solid #d9c4e2 1px;
+	height:30px;
+	
+}
+
+#tblListar thead{
+	background-color: #660099;
+	color: #fff;
+	border: 20px #660099;
+	border-radius: 5px;
+	
+}
+
 #btnSalvar {
 	color: #fff;
 	padding: 5px 10px;
@@ -68,3 +98,5 @@ tr:hover {background-color: #66009949;}
 	position: fixed;
 	padding-left: 10px;
 }	
+
+

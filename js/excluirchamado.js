@@ -91,12 +91,14 @@ $(function(){
 		// Malha de repetição para inserir todos os registros
 		 for(var i in tbClientes){
 			var cli = JSON.parse(tbClientes[i]);
+			// Formatar data para o format brasileiro dia, mes, ano
+			var dtfinal = cli.Data.substring(8,10) + "/" +cli.Data.substring(5,7)  +"/"  +cli.Data.substring(0,4);
 		  	$("#tblListar tbody").append("<tr>"+
                                          "  <td><img src='img/delete.png' alt='"+i+"' class='btnExcluir'/></td>" + 
               						 	 "	<td>"+cli.Codigo+"</td>" + 
 										 "	<td>"+cli.Nome+"</td>" + 
 										 "	<td>"+cli.Email+"</td>" + 
-                                         "	<td>"+cli.Data+"</td>" + 
+                                         "	<td>"+dtfinal+"</td>" + 
                                          "	<td>"+cli.Hora+"</td>" + 
                                          "	<td>"+cli.Categoria+"</td>" + 
                                          "	<td>"+cli.Prioridade+"</td>" + 
@@ -109,13 +111,13 @@ $(function(){
 
 	// Função para excluir registros
 	function Excluir(){
-		let decisao = confirm("Deseja mesmo exluir o chamado?");
+		let decisao = confirm("Deseja mesmo excluir o chamado?");
 		if (decisao==true) {
 		tbClientes.splice(indice_selecionado, 1);
 		localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
 		alert("Registro excluído.");
 		}else{
-			alert("O chamado não foi excluido");
+			alert("O chamado não foi excluído");
 		}
 	}
 
