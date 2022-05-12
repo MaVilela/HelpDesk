@@ -117,7 +117,7 @@ $(function(){
 									 	 "	<td>"+cli.Codigo+"</td>" + 
 										 "	<td>"+cli.Nome+"</td>" + 
 										 "	<td>"+cli.Email+"</td>" + 
-                                         "	<td>"+cli.Data+"</td>" + 
+                                         "	<td>"+dtfinal+"</td>" + 
                                          "	<td>"+cli.Hora+"</td>" + 
                                          "	<td>"+cli.Categoria+"</td>" + 
                                          "	<td>"+cli.Prioridade+"</td>" + 
